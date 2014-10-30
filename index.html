@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Syncopate|Orbitron|Lobster+Two' rel='stylesheet' type='text/css'>
+  <title>WWC</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCLBi6GIBHDzOS2WMhYsiwSYxyHNRkk4o">
+  </script>
+  <link rel="stylesheet" type="text/css" href="mashup.css">
+  </head>
+  <body id='body'>
+
+  
+  <script src = "mashup.js"></script>
+  
+  <!--
+    Below we include the Login Button social plugin. This button uses
+    the JavaScript SDK to present a graphical Login button that triggers
+    the FB.login() function when clicked.
+  -->
+  
+<header>
+  <h1>WWC</h1>
+  <h4>World Wide Creepster</h4>
+  <div id="fb-root"></div>
+  <fb:login-button id="fblog" autologoutlink="true" scope="read_stream,public_profile,email" onlogin="checkLoginState(); ">
+  </fb:login-button>
+
+  <div id="status"></div>
+  
+  </header>
+  
+  <section id='map'>
+  <div id="map-canvas"></div>
+  </section>
+  </body>
+</html>
